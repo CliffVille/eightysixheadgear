@@ -5,10 +5,10 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 const navItems = [
-  { name: "Home", href: "/" },
+
   { name: "Headbands", href: "/headbands" },
-  { name: "Apparel", href: "/apparel" },
   { name: "Custom", href: "/custom" },
+  { name: "Contact", href: "/contact" },
   { name: "About", href: "/about" },
 ];
 
@@ -20,14 +20,14 @@ export default function Sidebar() {
     }, []);
 
   return (
-    <div className="h-screen w-64 bg-transparent text-black text-center flex flex-col justify-between items-center p-4">
+    <div className="h-screen w-64 bg-transparent text-black text-center flex flex-col justify-around items-center p-4 sticky">
         <div className="flex justify-center mb-6">
             <Link href="/">
                 <Image 
                     src="/logo.png"
                     alt="EightysixGear"
-                    width={50}
-                    height={50}
+                    width={150}
+                    height={150}
                     priority
                 />
             </Link>

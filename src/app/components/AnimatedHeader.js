@@ -21,7 +21,7 @@ const AnimatedTextEffect = () => {
                     color: Math.random() > 0.7 ? "text-red-600" : "text-white",
                 }))
             );
-        }, 1000);
+        }, 700);
 
         return () => clearInterval(interval);
     }, []);

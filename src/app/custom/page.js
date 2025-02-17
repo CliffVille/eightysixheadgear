@@ -2,7 +2,9 @@ import React from 'react'
 
 const custom = () => {
   return (
-    <div>custom</div>
+    <div className="min-h-screen w-screen flex flex-col justify-center items-center bg-background bg-cover bg-no-repeat px-6 py-12 text-white">
+      
+    </div>
   )
 }
 

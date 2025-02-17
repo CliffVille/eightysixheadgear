@@ -11,36 +11,6 @@
 html {
   background-color: #fff;
   margin-top: 0;
+  overflow-x: hidden;
 }
 
-body {
-  cursor: none;
-}
-
-.custom-cursor::after {
-  content: "";
-  position: absolute;
-  width: 4px; 
-  height: 4px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: auto;
-}
-
-@keyframes drip {
-  0% { opacity: 1; transform: translateY(0) scaleX(1); }
-  30% { transform: translateY(10px) scaleX(1.2); }
-  60% { transform: translateY(20px) scaleX(0.8); }
-  100% { opacity: 0; transform: translateY(30px) scaleX(1.5); }
-}
-
-.animate-drip {
-  animation: drip 1.5s infinite ease-in-out;
-  background: radial-gradient(circle, rgba(150, 0, 0, 0.9) 20%, rgba(100, 0, 0, 0.8) 100%);
-  filter: blur(1px);
-}
-
-.bloody-text {
-  text-shadow: 2px 2px 4px rgba(150, 0, 0, 0.8), 0px 0px 10px rgba(255, 0, 0, 0.7);
-}

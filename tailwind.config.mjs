@@ -9,6 +9,7 @@ export default {
     extend: {
       backgroundImage: {
         background: "url('/background6.png')",
+        bg: "url('/bg.svg')"
       },
       colors: {
         background: "var(--background)",
