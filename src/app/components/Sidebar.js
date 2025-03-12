@@ -8,6 +8,7 @@ const navItems = [
   { name: "Headbands", href: "/headbands" },
   { name: "Custom", href: "/custom" },
   { name: "About", href: "/about" },
+  { name: "Sponsorship", href: "/sponsorship" },
 ];
 
 export default function Sidebar() {
